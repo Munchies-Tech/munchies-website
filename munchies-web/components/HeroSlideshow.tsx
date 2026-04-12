@@ -36,10 +36,10 @@ export default function HeroSlideshow({ slides }: HeroSlideshowProps) {
 
   return (
     <section className="relative h-screen flex flex-col">
-      {/* Navbar overlaid on hero */}
-      <div className="absolute top-0 left-0 right-0 z-10">
+      <div className="absolute top-0 left-0 right-0 z-20">
         <Navbar />
       </div>
+      {/* Navbar overlaid on hero */}
 
       {/* Slide Backgrounds — all stacked, crossfade via opacity */}
       {slides.map((s, i) => (
