@@ -124,6 +124,7 @@ export default function Home() {
             src="/images/hero-banner.jpg"
             alt="Munchies hero banner"
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
@@ -203,6 +204,7 @@ export default function Home() {
                     src={item.image}
                     alt={item.label}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
                 </div>
