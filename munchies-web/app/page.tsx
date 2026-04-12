@@ -1,6 +1,27 @@
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import Footer from "@/components/Footer";
+
+const heroSlides = [
+  {
+    background: "/images/hero-banner.jpg",
+    heading: "Tasty Goodness, Out Of This World",
+    body: "Munchies delivers tasty goodness through delicious meals",
+    buttonText: "View Menu",
+  },
+  {
+    background: "/images/hero-food-purpose.png",
+    heading: "Food With Purpose",
+    body: "At Munchies, every meal is made with purpose, guided by thoughtful choices that care for our planet.",
+    buttonText: "View Impact",
+  },
+  {
+    background: "/images/hero-made-for-you.png",
+    heading: "Made for You",
+    body: "At Munchies, food is more than a meal — it's a shared experience for the campus community.",
+    buttonText: "View About",
+  },
+];
 
 const metrics = [
   {
@@ -111,55 +132,8 @@ function StarRating() {
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[600px] flex flex-col">
-        {/* Navbar overlaid on hero */}
-        <div className="absolute top-0 left-0 right-0 z-10">
-          <Navbar />
-        </div>
-
-        {/* Hero Background */}
-        <div className="absolute inset-0 bg-[#3D0C0C]">
-          <Image
-            src="/images/hero-banner.jpg"
-            alt="Munchies hero banner"
-            fill
-            sizes="100vw"
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col justify-end h-full px-16 pb-16">
-          <h1 className="font-serif text-5xl font-bold text-white leading-tight max-w-xl mb-4">
-            Tasty Goodness, Out Of This World
-          </h1>
-          <p className="text-white/80 text-lg mb-6">
-            Munchies delivers tasty goodness through delicious meals
-          </p>
-          <div>
-            <button className="border-2 border-white text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-white hover:text-primary transition-colors">
-              View Menu
-            </button>
-          </div>
-        </div>
-
-        {/* Navigation Arrows */}
-        <div className="absolute right-8 top-20 flex gap-2 z-10">
-          <button className="w-10 h-10 rounded-full bg-cream/80 flex items-center justify-center text-primary-dark hover:bg-cream transition-colors">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-            </svg>
-          </button>
-          <button className="w-10 h-10 rounded-full bg-cream/80 flex items-center justify-center text-primary-dark hover:bg-cream transition-colors">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-            </svg>
-          </button>
-        </div>
-      </section>
+      {/* Hero Slideshow */}
+      <HeroSlideshow slides={heroSlides} />
 
       {/* Key Metrics Section */}
       <section className="bg-cream py-16 px-8">

@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import PromoBanner from "@/components/PromoBanner";
+
 
 const categories = [
   { name: "Munchies Blog", count: "10" },
@@ -43,7 +43,7 @@ const blogPosts = [
 export default function BlogPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <PromoBanner />
+      {/* <PromoBanner /> */}
 
       {/* Header */}
       <div className="bg-cream">

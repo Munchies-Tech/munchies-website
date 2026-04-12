@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/menu", label: "Menu" },
+  // { href: "/menu", label: "Menu" },
   { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact Us" },
+  // { href: "/contact", label: "Contact Us" },
 ];
 
 export default function Navbar() {
