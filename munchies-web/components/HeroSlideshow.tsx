@@ -35,7 +35,7 @@ export default function HeroSlideshow({ slides }: HeroSlideshowProps) {
   const slide = slides[currentSlide];
 
   return (
-    <section className="relative h-[600px] flex flex-col">
+    <section className="relative h-screen flex flex-col">
       {/* Navbar overlaid on hero */}
       <div className="absolute top-0 left-0 right-0 z-10">
         <Navbar />

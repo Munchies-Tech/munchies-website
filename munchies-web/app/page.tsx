@@ -4,22 +4,28 @@ import Footer from "@/components/Footer";
 
 const heroSlides = [
   {
-    background: "/images/hero-banner.jpg",
+    background: "/images/hero-banner-product.jpg",
     heading: "Tasty Goodness, Out Of This World",
     body: "Munchies delivers tasty goodness through delicious meals",
     buttonText: "View Menu",
   },
   {
-    background: "/images/hero-food-purpose.png",
+    background: "/images/hero-banner-impact.png",
     heading: "Food With Purpose",
     body: "At Munchies, every meal is made with purpose, guided by thoughtful choices that care for our planet.",
     buttonText: "View Impact",
   },
   {
-    background: "/images/hero-made-for-you.png",
+    background: "/images/hero-banner-people.png",
     heading: "Made for You",
     body: "At Munchies, food is more than a meal — it's a shared experience for the campus community.",
     buttonText: "View About",
+  },
+  {
+    background: "/images/hero-banner-place.png",
+    heading: "Your campus food spot",
+    body: "Munchies is your go-to food spot, serving fresh and fast meals.",
+    buttonText: "View Story",
   },
 ];
 
