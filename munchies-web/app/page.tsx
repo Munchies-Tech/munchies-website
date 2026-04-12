@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -18,12 +19,12 @@ const metrics = [
 ];
 
 const menuItems = [
-  { label: "Snacks", tag: "New" },
-  { label: "Local Foods", tag: "New" },
-  { label: "Fried Foods", tag: "New" },
-  { label: "Snacks", tag: "New" },
-  { label: "Local Foods", tag: "New" },
-  { label: "Fried Foods", tag: "New" },
+  { label: "Snacks", tag: "New", image: "/images/snacks.jpg" },
+  { label: "Local Foods", tag: "New", image: "/images/local-foods.jpg" },
+  { label: "Fried Foods", tag: "New", image: "/images/fried-foods.jpg" },
+  { label: "Snacks", tag: "New", image: "/images/snacks-1.jpg" }, 
+  { label: "Local Foods", tag: "New", image: "/images/local-foods-1.png" },
+  { label: "Fried Foods", tag: "New", image: "/images/fried-foods.jpg" },
 ];
 
 const testimonials = [
@@ -119,11 +120,14 @@ export default function Home() {
 
         {/* Hero Background */}
         <div className="absolute inset-0 bg-[#3D0C0C]">
+          <Image
+            src="/images/hero-banner.jpg"
+            alt="Munchies hero banner"
+            fill
+            className="object-cover"
+            priority
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
-          {/* Placeholder for hero food image */}
-          <div className="absolute inset-0 flex items-center justify-center text-white/20 text-lg">
-            Hero Food Image
-          </div>
         </div>
 
         {/* Hero Content */}
@@ -194,9 +198,13 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-6">
             {menuItems.map((item, i) => (
               <div key={i} className="group">
-                {/* Image placeholder */}
-                <div className="aspect-[4/3] rounded-lg bg-[#8B7355] flex items-center justify-center text-white/30 text-sm overflow-hidden">
-                  <span>{item.label} Image</span>
+                <div className="aspect-[4/3] rounded-lg bg-[#8B7355] relative overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.label}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="flex justify-between items-center mt-3">
                   <span className="text-sm font-medium text-foreground">

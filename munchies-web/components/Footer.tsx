@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       {/* Main Footer */}
-      <footer className="bg-primary-dark text-white px-8 py-12">
+      <footer className="bg-primary text-white px-8 py-12">
         <div className="max-w-7xl mx-auto grid grid-cols-5 gap-8">
           {/* App Download */}
           <div className="col-span-1">

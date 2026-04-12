@@ -3,9 +3,10 @@
 :root {
   --background: #F5E6C8;
   --foreground: #1a1a1a;
-  --primary: #8B1A1A;
+  --primary: rgba(150, 0, 0, 1);
   --primary-dark: #3D0C0C;
-  --accent: #CC0000;
+  /* --accent: #CC0000; */
+  --accent: rgba(191, 82, 82, 1);
   --cream: #F5E6C8;
   --cream-light: #FDF6EC;
 }
