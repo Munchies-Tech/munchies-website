@@ -6,10 +6,10 @@ export default function Footer() {
   return (
     <>
       {/* Main Footer */}
-      <footer className="bg-primary text-white px-8 py-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-5 gap-8">
+      <footer className="bg-primary text-white px-4 md:px-8 py-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* App Download */}
-          <div className="col-span-1">
+          <div>
             <p className="text-sm leading-relaxed mb-6">
               Experience the Munchies Mobile App. Download our app today and
               enjoy a seamless ordering experience. Available on both iOS and
@@ -117,7 +117,7 @@ export default function Footer() {
       </footer>
 
       {/* Bottom Bar */}
-      <div className="bg-accent text-white px-8 py-3 flex justify-between items-center text-sm">
+      <div className="bg-accent text-white px-4 md:px-8 py-3 flex flex-col items-center gap-2 sm:flex-row sm:justify-between text-sm">
         <span>2025 Copyright Munchies</span>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

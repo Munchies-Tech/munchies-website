@@ -62,11 +62,11 @@ export default function HeroSlideshow({ slides }: HeroSlideshowProps) {
       ))}
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col justify-end h-full px-16 pb-16">
-        <h1 className="font-serif text-5xl font-bold text-white leading-tight max-w-xl mb-4">
+      <div className="relative z-10 flex flex-col justify-end h-full px-6 pb-8 md:px-16 md:pb-16">
+        <h1 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight max-w-xl mb-4">
           {slide.heading}
         </h1>
-        <p className="text-white/80 text-lg mb-6">{slide.body}</p>
+        <p className="text-white/80 text-base md:text-lg mb-6">{slide.body}</p>
         <div>
           <button className="bg-background border-2 border-background text-primary px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary hover:text-background transition-colors">
             {slide.buttonText}
@@ -75,7 +75,7 @@ export default function HeroSlideshow({ slides }: HeroSlideshowProps) {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="absolute right-8 top-20 flex gap-2 z-10">
+      <div className="absolute bottom-6 right-6 md:top-20 md:right-8 md:bottom-auto flex gap-2 z-10">
         <button
           onClick={goPrev}
           className="w-10 h-10 rounded-full bg-cream/80 flex items-center justify-center text-primary-dark hover:bg-cream transition-colors"

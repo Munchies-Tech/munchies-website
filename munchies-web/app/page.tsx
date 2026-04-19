@@ -145,7 +145,7 @@ export default function Home() {
       <HeroSlideshow slides={heroSlides} />
 
       {/* Key Metrics Section */}
-      <section className="bg-cream-light py-16 px-8">
+      <section className="bg-cream-light py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <p className="text-sm font-semibold text-foreground mb-4">
             Key Metrics
@@ -155,7 +155,7 @@ export default function Home() {
             a planet that thanks you for it.
           </h2>
 
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             {metrics.map((metric, i) => (
               <div key={i} className="text-center">
                 {/* Icon placeholder */}
@@ -178,9 +178,9 @@ export default function Home() {
       </section>
 
       {/* Menu Grid Section */}
-      <section className="bg-cream py-8 px-8">
+      <section className="bg-cream py-8 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {menuItems.map((item, i) => (
               <div key={i} className="group">
                 <div className="aspect-[4/3] rounded-lg bg-[#8B7355] relative overflow-hidden">
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-cream-light py-16 px-8">
+      <section className="bg-cream-light py-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center mb-2 text-accent">
             <svg
@@ -233,7 +233,7 @@ export default function Home() {
             Testimonials
           </h2>
 
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {testimonials.map((t, i) => (
               <div
                 key={i}
