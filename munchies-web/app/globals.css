@@ -8,7 +8,8 @@
   /* --accent: #CC0000; */
   --accent: rgba(191, 82, 82, 1);
   --cream: #F5E6C8;
-  --cream-light: #FDF6EC;
+  --cream-light: #EDE0C4;
+  --glow-blue: #1e3a8a;
 }
 
 @theme inline {
@@ -19,6 +20,7 @@
   --color-accent: var(--accent);
   --color-cream: var(--cream);
   --color-cream-light: var(--cream-light);
+  --color-glow-blue: var(--glow-blue);
   --font-sans: var(--font-clash-display);
   --font-serif: var(--font-clash-display);
 }
