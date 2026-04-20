@@ -42,15 +42,15 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-primary relative">
         <Navbar />
-        <div className="text-center py-16 px-8">
-          <h1 className="font-serif text-5xl font-bold text-white mb-4">
+        <div className="text-center py-10 px-4 md:py-16 md:px-8">
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
             About
           </h1>
           <p className="text-white/80 text-sm max-w-lg mx-auto mb-8">
             Delicious meals made to thrill your taste buds and honor the world
             we share
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <button className="border-2 border-transparent bg-cream text-primary px-6 py-2.5 rounded-md text-sm font-medium hover:bg-primary hover:text-cream hover:border-cream transition-colors">
               Contact Us
             </button>
@@ -62,19 +62,19 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-cream pt-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-2">
-          <div className="relative min-h-100 rounded-lg overflow-hidden">
+      <section className="bg-cream pt-10 md:pt-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div className="hidden md:block relative md:min-h-100 rounded-lg overflow-hidden">
             <Image
               src="/images/hero-banner-impact.png"
               alt="Our Mission & Vision"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="50vw"
             />
           </div>
-          <div className="flex flex-col justify-center px-16 py-16">
-            <h2 className="font-serif text-4xl font-bold text-primary mb-6 leading-tight">
+          <div className="flex flex-col justify-center px-6 py-8 md:px-16 md:py-16">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight">
               Our Mission &amp; Vision
             </h2>
             <p className="text-sm leading-relaxed text-foreground/70">
@@ -90,9 +90,9 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="bg-cream py-16 px-8">
+      <section className="bg-cream py-12 px-4 md:py-16 md:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="font-serif text-4xl font-bold text-primary mb-8 underline decoration-2 underline-offset-8">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8 underline decoration-2 underline-offset-8">
             Our Core Values
           </h2>
           <p className="text-sm leading-relaxed text-foreground/70 mb-6 max-w-3xl mx-auto">
@@ -115,24 +115,27 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Timeline */}
-      <section className="bg-cream py-16 px-8">
+      <section className="bg-cream py-12 px-4 md:py-16 md:px-8">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-serif text-4xl font-bold text-primary text-center mb-16 underline decoration-2 underline-offset-8">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary text-center mb-10 md:mb-16 underline decoration-2 underline-offset-8">
             Our Story
           </h2>
 
-          <div className="relative space-y-16">
+          <div className="relative space-y-10 md:space-y-16">
             <div
               aria-hidden
-              className="pointer-events-none absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-primary"
+              className="hidden md:block pointer-events-none absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-primary"
             />
             {timelineEntries.map((entry, i) => {
               const isLeft = i % 2 === 0;
               return (
-                <div key={i} className="relative grid grid-cols-2 gap-12 items-start">
+                <div
+                  key={i}
+                  className="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start"
+                >
                   <div
                     aria-hidden
-                    className="absolute left-1/2 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_18px_4px_var(--color-primary)]"
+                    className="hidden md:block absolute left-1/2 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-primary shadow-[0_0_18px_4px_var(--color-primary)]"
                   />
                   {isLeft ? (
                     <>
@@ -148,8 +151,8 @@ export default function AboutPage() {
                           {entry.text}
                         </p>
                       </div>
-                      {/* Image on right */}
-                      <div className="relative rounded-lg aspect-[4/3] overflow-hidden">
+                      {/* Image on right — hidden on phone */}
+                      <div className="hidden md:block relative rounded-lg aspect-4/3 overflow-hidden">
                         <Image
                           src={entry.image}
                           alt={`${entry.year} - ${entry.title}`}
@@ -161,8 +164,8 @@ export default function AboutPage() {
                     </>
                   ) : (
                     <>
-                      {/* Image on left */}
-                      <div className="relative rounded-lg aspect-[4/3] overflow-hidden">
+                      {/* Image on left — hidden on phone */}
+                      <div className="hidden md:block relative rounded-lg aspect-4/3 overflow-hidden">
                         <Image
                           src={entry.image}
                           alt={`${entry.year} - ${entry.title}`}
@@ -172,7 +175,7 @@ export default function AboutPage() {
                         />
                       </div>
                       {/* Text on right */}
-                      <div className="text-right">
+                      <div className="md:text-right">
                         <p className="text-sm text-primary font-semibold mb-1">
                           {entry.year}
                         </p>
@@ -193,7 +196,7 @@ export default function AboutPage() {
       </section>
 
       {/* Full Width Images */}
-      <section className="grid grid-cols-4 h-48">
+      <section className="grid grid-cols-4 h-24 sm:h-32 md:h-48">
         {[
           { src: "/images/local-foods.jpg", alt: "Local foods" },
           { src: "/images/local-foods-1.png", alt: "Local foods" },
@@ -207,7 +210,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-cream py-16 px-8 text-center">
+      <section className="bg-cream py-12 px-4 md:py-16 md:px-8 text-center">
         <h2 className="font-serif text-2xl font-bold text-primary mb-6 max-w-lg mx-auto">
           Reach out to Munchies today and order your favorite meals.
         </h2>
