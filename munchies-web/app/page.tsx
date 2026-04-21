@@ -49,12 +49,12 @@ const metrics = [
 ];
 
 const menuItems = [
-  { label: "Snacks", tag: "New", image: "/images/snacks.jpg" },
-  { label: "Local Foods", tag: "New", image: "/images/local-foods.jpg" },
-  { label: "Fried Foods", tag: "New", image: "/images/fried-foods.jpg" },
-  { label: "Snacks", tag: "New", image: "/images/snacks-1.jpg" },
-  { label: "Local Foods", tag: "New", image: "/images/local-foods-1.png" },
-  { label: "Fried Foods", tag: "New", image: "/images/local-foods-2.jpg" },
+  { label: "Snacks", tag: "", image: "/images/snacks.jpg" },
+  { label: "Local Foods", tag: "", image: "/images/local-foods.jpg" },
+  { label: "Fried Foods", tag: "", image: "/images/fried-foods.jpg" },
+  { label: "Snacks", tag: "", image: "/images/snacks-1.jpg" },
+  { label: "Local Foods", tag: "", image: "/images/local-foods-1.png" },
+  { label: "Fried Foods", tag: "", image: "/images/local-foods-2.jpg" },
 ];
 
 const testimonials = [
@@ -206,9 +206,9 @@ export default function Home() {
 
           {/* View Full Menu Button */}
           <div className="text-center mt-12">
-            <button className="border-2 border-primary text-primary px-8 py-2.5 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors">
+            {/* <button className="border-2 border-primary text-primary px-8 py-2.5 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors">
               View Full Menu
-            </button>
+            </button> */}
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -51,12 +53,14 @@ export default function AboutPage() {
             we share
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-            <button className="border-2 border-transparent bg-cream text-primary px-6 py-2.5 rounded-md text-sm font-medium hover:bg-primary hover:text-cream hover:border-cream transition-colors">
+            <button 
+            onClick={() => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" })}
+            className="border-2 border-transparent bg-cream text-primary px-6 py-2.5 rounded-md text-sm font-medium hover:bg-primary hover:text-cream hover:border-cream transition-colors">
               Contact Us
             </button>
-            <button className="border-2 border-cream text-cream px-6 py-2.5 rounded-md text-sm font-medium hover:bg-cream hover:text-primary transition-colors">
+            {/* <button className="border-2 border-cream text-cream px-6 py-2.5 rounded-md text-sm font-medium hover:bg-cream hover:text-primary transition-colors">
               Try Our Mobile App
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
@@ -210,14 +214,14 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-cream py-12 px-4 md:py-16 md:px-8 text-center">
+      {/* <section className="bg-cream py-12 px-4 md:py-16 md:px-8 text-center">
         <h2 className="font-serif text-2xl font-bold text-primary mb-6 max-w-lg mx-auto">
           Reach out to Munchies today and order your favorite meals.
         </h2>
         <button className="border-2 border-primary text-primary px-8 py-2.5 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors">
           Contact Us to Order
         </button>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

@@ -8,7 +8,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   // { href: "/menu", label: "Menu" },
-  { href: `${process.env.NEXT_PUBLIC_MUNCHIES_GRILL_URL}blog`, label: "Blog" },
+  // { href: `${process.env.NEXT_PUBLIC_MUNCHIES_GRILL_URL}blog`, label: "Blog" },
   // { href: "/contact", label: "Contact Us" },
 ];
 

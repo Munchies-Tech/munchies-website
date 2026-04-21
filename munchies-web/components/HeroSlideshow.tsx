@@ -67,11 +67,11 @@ export default function HeroSlideshow({ slides }: HeroSlideshowProps) {
           {slide.heading}
         </h1>
         <p className="text-white/80 text-base md:text-lg mb-6">{slide.body}</p>
-        <div>
+        {/* <div>
           <button className="bg-background border-2 border-background text-primary px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary hover:text-background transition-colors">
             {slide.buttonText}
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Navigation Arrows */}

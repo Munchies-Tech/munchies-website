@@ -7,9 +7,9 @@ export default function Footer() {
     <>
       {/* Main Footer */}
       <footer className="bg-primary text-white px-4 md:px-8 py-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="max-w-7xl mx-auto flex flex-row justify-center gap-16">
           {/* App Download */}
-          <div>
+          {/* <div>
             <p className="text-sm leading-relaxed mb-6">
               Experience the Munchies Mobile App. Download our app today and
               enjoy a seamless ordering experience. Available on both iOS and
@@ -35,16 +35,16 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Address */}
           <div>
             <h4 className="font-semibold text-sm mb-4">ADDRESS</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li>Ashesi University</li>
-              <li>Accra</li>
-              <li>+233 56789007</li>
-              <li>Munchies@tech.com</li>
+              <li>Berekuso</li>
+              <li>+233 9002 794</li>
+              <li>techdev.munchies@gmail.com</li>
             </ul>
           </div>
 
@@ -53,11 +53,11 @@ export default function Footer() {
             <h4 className="font-semibold text-sm mb-4">SOCIALS</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="https://www.instagram.com/_munchies_grill/" className="hover:underline">
                   Instagram
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" className="hover:underline">
                   Twitter
                 </Link>
@@ -71,7 +71,7 @@ export default function Footer() {
                 <Link href="#" className="hover:underline">
                   Whatsapp
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -84,16 +84,16 @@ export default function Footer() {
                   Privacy Policy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" className="hover:underline">
                   Terms of Service
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           {/* Resources */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-sm mb-4">RESOURCES</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
@@ -112,7 +112,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </footer>
 
