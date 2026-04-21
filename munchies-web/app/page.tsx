@@ -59,64 +59,44 @@ const menuItems = [
 
 const testimonials = [
   {
-    name: "Vlad Matakou",
-    rating: "3.6/5",
+    name: "Akua Serwaa",
+    rating: "5/5",
     text: "Whenever I'm hungry between classes, Munchies is the first place I think of. The meals are filling, tasty, and perfect for a busy student schedule.",
   },
   {
-    name: "Guillermo Rauch",
-    rating: "3.6/5",
+    name: "Yaw Prempeh",
+    rating: "5/5",
     text: "Munchies is my go-to spot on campus. The food is always fresh and the service is super fast!",
   },
   {
-    name: "Jane Rosha",
-    rating: "3.6/5",
+    name: "Jane Owusu",
+    rating: "5/5",
     text: "Munchies has really become part of my daily routine at Ashesi. The meals are affordable and filling, which is perfect for students. I also love the friendly atmosphere—it always feels like a comfortable place to sit, eat, and take a break from the day.",
   },
   {
-    name: "Chun Jung",
-    rating: "3.6/5",
+    name: "Michael Essumang",
+    rating: "5/5",
     text: "Affordable meals, great taste, and a really nice atmosphere. I always recommend Munchies to my friends.",
   },
   {
-    name: "Zeno Rocha",
-    rating: "3.6/5",
+    name: "Kumaru Usman",
+    rating: "5/5",
     text: "Munchies has really become part of my daily routine at Ashesi. The meals are affordable and filling, which is perfect for students. I also love the friendly atmosphere—it always feels like a comfortable place to sit, eat, and take a break from the day.",
   },
   {
-    name: "Hnet Matakou",
-    rating: "3.6/5",
+    name: "Mark Tettevi",
+    rating: "5/5",
     text: "Whenever I'm hungry between classes, Munchies is the first place I think of. The meals are filling, tasty, and perfect for a busy student schedule.",
   },
   {
     name: "Adam Carrigan",
-    rating: "3.6/5",
+    rating: "5/5",
     text: "The food at Munchies never disappoints. I love how quickly the meals are prepared.",
   },
   {
-    name: "Charity Foly",
-    rating: "3.6/5",
+    name: "Joshua Ayitey",
+    rating: "5/5",
     text: "Munchies has really become part of my daily routine at Ashesi. The meals are affordable and filling, which is perfect for students. I also love the friendly atmosphere—it always feels like a comfortable place to sit, eat, and take a break from the day.",
-  },
-  {
-    name: "Ashley Mulligan",
-    rating: "3.6/5",
-    text: "Whenever I have a busy day on campus, I know I can rely on Munchies for a good meal.",
-  },
-  {
-    name: "Mauyan Sakem",
-    rating: "3.6/5",
-    text: "Whenever I'm hungry between classes, Munchies is the first place I think of. The meals are filling, tasty, and perfect for a busy student schedule.",
-  },
-  {
-    name: "Ashley Mulligan",
-    rating: "3.6/5",
-    text: "The food at Munchies never disappoints. I love how quickly the meals are prepared.",
-  },
-  {
-    name: "Mark Dao",
-    rating: "3.6/5",
-    text: "I appreciate how consistent the quality of the food is.",
   },
 ];
 
@@ -129,7 +109,7 @@ function StarRating() {
           width="14"
           height="14"
           viewBox="0 0 24 24"
-          fill={i < 3 ? "#E8B84B" : i === 3 ? "#E8B84B" : "#888"}
+          fill="#E8B84B"
         >
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
