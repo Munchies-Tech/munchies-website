@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       {/* Main Footer */}
       <footer className="bg-primary text-white px-4 md:px-8 py-12">
-        <div className="max-w-7xl mx-auto flex flex-row justify-center gap-16">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-center gap-8 md:gap-16">
           {/* App Download */}
           {/* <div>
             <p className="text-sm leading-relaxed mb-6">
